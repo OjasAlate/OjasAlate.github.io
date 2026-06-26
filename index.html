@@ -1,38 +1,176 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Ojas Alate | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ojas Alate | Computer Engineering Portfolio</title>
+    <meta name="description" content="Portfolio for Ojas Alate, a computer engineering graduate focused on embedded firmware, electrical systems, signal analysis, and software engineering projects.">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Ojas Alate</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<h1>Ojas Alate</h1>
+    <main>
+        <section class="hero section">
+            <div class="hero-copy">
+                <p class="eyebrow">Embedded | Electrical | Software</p>
+                <h1>Engineering projects that connect hardware, firmware, and software.</h1>
+                <p class="hero-text">
+                    I build microcontroller-based systems, write real-time firmware, analyze electrical signals, and develop software that turns hardware concepts into working prototypes.
+                </p>
+                <div class="hero-actions" aria-label="Primary links">
+                    <a class="button primary" href="#projects">View Projects</a>
+                    <a class="button secondary" href="mailto:ojasalate@gmail.com">Email Me</a>
+                </div>
+            </div>
+            <div class="signal-panel" aria-label="Portfolio focus summary">
+                <div class="signal-line" aria-hidden="true">
+                    <svg viewBox="0 0 520 220" role="img">
+                        <polyline fill="none" stroke="#0c6b76" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" points="0,116 70,116 88,72 106,154 126,116 188,116 210,28 242,190 270,116 330,116 350,84 372,142 396,116 520,116"></polyline>
+                    </svg>
+                </div>
+                <div class="signal-grid">
+                    <span>ADC</span>
+                    <span>SPI</span>
+                    <span>EMC</span>
+                    <span>C++</span>
+                    <span>ESP32</span>
+                    <span>Python</span>
+                </div>
+            </div>
+        </section>
 
-<h2>Computer Engineer</h2>
+        <section class="section overview" aria-label="Professional overview">
+            <div>
+                <p class="section-label">Profile</p>
+                <h2>Practical engineering across embedded systems, electrical analysis, and software.</h2>
+            </div>
+            <p>
+                Computer Engineering bachelor's graduate from Michigan State University with hands-on experience in embedded firmware, circuit and signal validation, data workflows, and AI-assisted software development.
+            </p>
+        </section>
 
-<p>
-I build embedded systems, software, and hardware projects.
-</p>
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="section-label">Selected Work</p>
+                <h2>Projects</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-visual ecg">ECG</div>
+                    <div class="project-content">
+                        <p class="project-meta">MSU x Texas Instruments | Jan 2026 - Apr 2026</p>
+                        <h3>ECG Signal Acquisition & Display</h3>
+                        <p>Real-time embedded C firmware, ADC sampling, circular buffering, SPI LCD display, and touchscreen interaction on the MSPM0G3507 LaunchPad.</p>
+                        <a class="text-link" href="capstone.html">Read project details</a>
+                    </div>
+                </article>
 
+                <article class="project-card">
+                    <div class="project-visual emi">EMI</div>
+                    <div class="project-content">
+                        <p class="project-meta">Michigan State University | Apr 2026</p>
+                        <h3>Electromagnetic Interference Analysis & Mitigation</h3>
+                        <p>Measured radiated emissions from an SMPS, identified common-mode switching noise, and compared mitigation strategies for EMC performance.</p>
+                        <a class="text-link" href="emi-analysis.html">Read project details</a>
+                    </div>
+                </article>
 
-<h2>Projects</h2>
+                <article class="project-card">
+                    <div class="project-visual game">C++</div>
+                    <div class="project-content">
+                        <p class="project-meta">Michigan State University | Oct 2025 - Nov 2025</p>
+                        <h3>Platformer Game</h3>
+                        <p>A team-built C++ platformer using object-oriented design, modular game systems, collision detection, scrolling, and virtual pixel rendering.</p>
+                        <a class="text-link" href="platformer.html">Read project details</a>
+                    </div>
+                </article>
 
-<div>
-<h3>Capstone Project</h3>
-<p>
-My senior design project involving...
-</p>
-</div>
+                <article class="project-card">
+                    <div class="project-visual zebra">AI</div>
+                    <div class="project-content">
+                        <p class="project-meta">GitHub | Jul 2025</p>
+                        <h3>Zebra Problem Solver</h3>
+                        <p>Optimized an MCTS + LLM Python solution to solve the Zebra/Einstein Problem while staying under strict model token limits.</p>
+                        <a class="text-link" href="zebra-problem.html">Read project details</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
+        <section class="section two-column" id="experience">
+            <div>
+                <p class="section-label">Experience</p>
+                <h2>Recent roles</h2>
+            </div>
+            <div class="timeline">
+                <article>
+                    <h3>AI Trainer Fellowship</h3>
+                    <p class="project-meta">Handshake | Dec 2025 - May 2026</p>
+                    <p>Evaluated and authored C++ algorithmic solutions, designed domain-specific prompts, and assessed response accuracy across edge cases.</p>
+                </article>
+                <article>
+                    <h3>Embedded Systems Intern</h3>
+                    <p class="project-meta">SRI Consultants | Jul 2025 - Aug 2025</p>
+                    <p>Built and validated an ESP32-S3 data collection system using MicroPython, NTP synchronization, sensor input, and scheduled server uploads.</p>
+                </article>
+                <article>
+                    <h3>Process Improvement & Data Intern</h3>
+                    <p class="project-meta">Michigan State University | Jun 2025 - Aug 2025</p>
+                    <p>Supported data workflow automation, standardized survey formatting, and documented Office of Medical Education websites through site mapping.</p>
+                </article>
+            </div>
+        </section>
 
-<h2>Contact</h2>
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="section-label">Technical Skills</p>
+                <h2>Tools I work with</h2>
+            </div>
+            <div class="skill-groups">
+                <div>
+                    <h3>Languages</h3>
+                    <p>Python, C++, C, JavaScript, HTML, CSS, R, Assembly, SQL</p>
+                </div>
+                <div>
+                    <h3>Embedded & HDL</h3>
+                    <p>MicroPython, Verilog, ESP32-S3, FRDM-KL25Z, MSPM0G3507</p>
+                </div>
+                <div>
+                    <h3>Electrical</h3>
+                    <p>MATLAB, LTSpice, PSpice, oscilloscopes, waveform generators, multimeters, soldering, circuit analysis</p>
+                </div>
+                <div>
+                    <h3>Development Tools</h3>
+                    <p>VS Code, CLion, Thonny, Vivado, Code Composer Studio, GitHub, CMake, Wireshark, Linux, Bash</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<p>
-GitHub: github.com/OjasAlate
-</p>
-
+    <footer class="site-footer" id="contact">
+        <div>
+            <h2>Let's connect.</h2>
+            <p>Open to embedded, electrical, and software engineering roles.</p>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:ojasalate@gmail.com">ojasalate@gmail.com</a>
+            <a href="tel:+12484347087">(248) 434-7087</a>
+            <a class="icon-link" href="https://www.linkedin.com/in/ojas-alate" aria-label="LinkedIn profile">
+                <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.68H9.35V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.34 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V8.98h3.56v11.47ZM22.23 0H1.76C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.76 24h20.47c.97 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0Z"></path>
+                </svg>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </div>
+    </footer>
 </body>
-
 </html>
