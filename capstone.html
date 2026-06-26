@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECG Signal Acquisition & Display | Ojas Alate</title>
+    <meta name="description" content="Capstone project details for Ojas Alate's ECG signal acquisition and display system built with MSU and Texas Instruments.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Ojas Alate</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero section">
+            <div>
+                <p class="eyebrow">Capstone | MSU x Texas Instruments</p>
+                <h1>ECG Signal Acquisition & Display</h1>
+                <p class="hero-text">A real-time embedded system for acquiring, processing, and displaying ECG waveform data on the MSPM0G3507 LaunchPad.</p>
+                <div class="hero-actions">
+                    <a class="button secondary" href="index.html#projects">Back to Projects</a>
+                    <span class="button disabled">External site coming soon</span>
+                </div>
+            </div>
+            <div class="project-stat">
+                <strong>1st</strong>
+                <span>place at MSU Design Day among 12 teams</span>
+            </div>
+        </section>
+
+        <section class="section detail-grid">
+            <article>
+                <p class="section-label">Project Summary</p>
+                <h2>Real-time firmware and display integration.</h2>
+                <p>
+                    This senior design project focused on capturing ECG signal data, processing samples continuously, and visualizing waveform output through an SPI-based LCD and resistive touchscreen interface.
+                </p>
+            </article>
+            <aside class="detail-panel">
+                <h3>Core Technologies</h3>
+                <ul>
+                    <li>MSPM0G3507 LaunchPad</li>
+                    <li>Embedded C</li>
+                    <li>Code Composer Studio</li>
+                    <li>ADC sampling</li>
+                    <li>SPI LCD</li>
+                    <li>Resistive touchscreen</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="section-label">Contributions</p>
+                <h2>What I built</h2>
+            </div>
+            <div class="feature-list">
+                <article>
+                    <h3>Signal Acquisition</h3>
+                    <p>Developed embedded C firmware for real-time signal acquisition and processing using ADC sampling pipelines.</p>
+                </article>
+                <article>
+                    <h3>Continuous Capture</h3>
+                    <p>Implemented circular buffering to support ongoing waveform capture without interrupting the display workflow.</p>
+                </article>
+                <article>
+                    <h3>User Interface</h3>
+                    <p>Interfaced the LCD and touchscreen so users could view signal data and select operating modes directly on the device.</p>
+                </article>
+                <article>
+                    <h3>Validation</h3>
+                    <p>Debugged analog and digital behavior with simulated and live input signals to verify stable system performance.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="text-link" href="index.html">Return to portfolio</a>
+    </footer>
+</body>
+</html>
