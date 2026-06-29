@@ -217,46 +217,50 @@ h3 {
     stroke-width: 1.8;
 }
 
-.signal-panel {
-    min-height: 430px;
-    padding: 34px;
-    background:
-        linear-gradient(135deg, rgba(12, 107, 118, 0.12), transparent 42%),
-        var(--surface);
+.focus-panel {
+    display: grid;
+    gap: 14px;
+    padding: 18px;
+    background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 8px;
     box-shadow: var(--shadow);
 }
 
-.signal-line {
-    height: 190px;
-    margin-bottom: 28px;
-    background:
-        linear-gradient(90deg, transparent 0 6%, var(--line) 6% 6.4%, transparent 6.4% 100%),
-        linear-gradient(0deg, transparent 0 48%, rgba(12, 107, 118, 0.22) 48% 49%, transparent 49% 100%);
-    background-size: 56px 100%, 100% 42px;
+.focus-card {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    padding: 20px;
+    background: #fbfcfd;
     border: 1px solid var(--line);
     border-radius: 8px;
-    position: relative;
-    overflow: hidden;
 }
 
-.signal-line svg {
-    position: absolute;
-    inset: 18px;
-    width: calc(100% - 36px);
-    height: calc(100% - 36px);
+.focus-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    color: var(--accent-dark);
+    background: #e8f3f4;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 900;
 }
 
-.signal-line polyline {
-    fill: none;
-    stroke: var(--accent);
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 10;
+.focus-card h2 {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
 }
 
-.signal-grid,
+.focus-card p {
+    margin: 0;
+    color: var(--muted);
+}
+
 .skill-groups,
 .feature-list {
     display: grid;
@@ -264,7 +268,6 @@ h3 {
     gap: 14px;
 }
 
-.signal-grid span,
 .skill-groups div,
 .feature-list article,
 .detail-panel,
@@ -275,13 +278,12 @@ h3 {
     border-radius: 8px;
 }
 
-.signal-grid span {
-    display: flex;
-    align-items: center;
-    min-height: 56px;
-    padding: 14px;
-    color: var(--accent-dark);
-    font-weight: 800;
+.profile-section,
+.overview,
+.two-column,
+.detail-grid {
+    padding: 56px 0;
+    border-top: 1px solid var(--line);
 }
 
 .overview,
@@ -290,8 +292,6 @@ h3 {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     gap: clamp(26px, 5vw, 70px);
-    padding: 56px 0;
-    border-top: 1px solid var(--line);
 }
 
 .overview > p,
@@ -299,6 +299,29 @@ h3 {
     margin-top: 8px;
     color: var(--muted);
     font-size: 1.08rem;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.profile-card {
+    min-height: 170px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.profile-card h3 {
+    color: var(--accent-dark);
+}
+
+.profile-card p {
+    margin: 0;
+    color: var(--muted);
 }
 
 .section-heading {
@@ -501,13 +524,13 @@ h3 {
         grid-template-columns: 1fr;
     }
 
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
     .hero {
         min-height: auto;
         padding-top: 48px;
-    }
-
-    .signal-panel {
-        min-height: 360px;
     }
 
     .project-grid,
@@ -546,7 +569,6 @@ h3 {
         min-height: 120px;
     }
 
-    .signal-grid,
     .skill-groups {
         grid-template-columns: 1fr;
     }
